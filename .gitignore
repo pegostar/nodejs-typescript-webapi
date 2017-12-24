@@ -1,0 +1,18 @@
+.idea/
+#Ignore thumbnails created by Windows
+Thumbs.db
+#Ignore folder property system operative
+.DS_Store
+#Ignore files built by Visual Studio Code
+*.launch
+*.bak
+*.cache
+*.log
+[Tt]est[Rr]esult*
+.vs/
+#Nuget packages folder
+packages/
+#Node element
+node_modules/
+.npmrc
+package-lock.json

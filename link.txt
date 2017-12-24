@@ -1,0 +1,13 @@
+https://blog.risingstack.com/building-a-node-js-app-with-typescript-tutorial/
+
+https://stackoverflow.com/questions/23258421/how-to-stop-app-that-node-js-express-npm-start
+
+https://github.com/thinktecture/api-conference-2017-nodejs-typescript-webapi
+
+Da capire se includere il .vscode
+
+https://buddy.works/pricing
+https://circleci.com/bb/atfcore
+https://app.codeship.com/projects/261795/project_setup_steps/setup_scm?provider=bitbucket
+https://www.bitrise.io/pricing
+

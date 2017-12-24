@@ -1,0 +1,2 @@
+# For bourne/bash shell scripts, we force unix line endings
+*.sh text eol=lf

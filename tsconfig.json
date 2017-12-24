@@ -1,0 +1,27 @@
+{
+    "compilerOptions":{
+       "target":"es5",
+       "module":"commonjs",
+       "sourceMap":true,
+       "isolatedModules":false,
+       "jsx":"preserve",
+       "moduleResolution":"node",
+       "experimentalDecorators":true,
+       "emitDecoratorMetadata":true,
+       "noImplicitAny":true,
+       "removeComments":true,
+       "noLib":false,
+       "preserveConstEnums":true,
+       "suppressImplicitAnyIndexErrors":true,
+       "declaration":true,
+       "watch":false,
+       "newLine":"LF"
+    },
+    "include":[
+       "src/**/*.ts"
+    ],
+    "exclude":[
+       "node_modules",
+       "bin"
+    ]
+ }
