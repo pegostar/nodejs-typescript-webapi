@@ -11,21 +11,14 @@ jobs:
       - run:
           name: install-npm-wee
           command: npm install
+      - run:
+          name: build
+          command: npm build
       - save_cache:
           key: dependency-cache-{{ checksum "package.json" }}
           paths:
             - ./node_modules
-      - run:
-          name: test
-          command: npm test
-      - run:
-          name: code-coverage
-          command: './node_modules/.bin/nyc report --reporter=text-lcov'
-      - store_artifacts:
-          path: test-results.xml
-          prefix: tests
-      - store_artifacts:
-          path: coverage
-          prefix: coverage
-      - store_test_results:
-          path: test-results.xml
+  test:
+    override:
+      - npm run test
+      - if [[ -e test-results.xml ]]; then cp test-results.xml $CIRCLE_TEST_REPORTS/test-results.xml; fi
