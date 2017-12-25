@@ -18,7 +18,7 @@ jobs:
       - run:
           name: Build
           command: npm build
-       - run:
+      - run:
           name: Test
           command: npm test
       - save_cache:
