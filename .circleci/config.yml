@@ -25,6 +25,9 @@ jobs:
     steps:
       - checkout
       - run:
+          name: Install npm wee
+          command: npm install
+      - run:
           name: Test
           command: npm test
       - run:
