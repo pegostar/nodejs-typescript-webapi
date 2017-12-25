@@ -4,7 +4,7 @@ jobs:
     docker:
       # specify the version you desire here
       - image: circleci/node:8.2.1
-    working_directory: ~/nodejs-typescript-webpai
+    working_directory: ~/nodejs-typescript-webapi
     steps:
       - checkout
       - restore_cache:
@@ -17,10 +17,10 @@ jobs:
           command: npm install
       - run:
           name: Build
-          command: npm -s run build
+          command: npm build
        - run:
           name: Test
-          command: npm -s run test
+          command: npm test
       - save_cache:
           paths:
             - node_modules
