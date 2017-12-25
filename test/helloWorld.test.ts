@@ -8,7 +8,6 @@ chai.use(chaiHttp);
 const expect = chai.expect;
 
 describe("baseRoute", () => {
-
   it("should be json", () => {
     return chai.request(app).get("/")
     .then(res => {
