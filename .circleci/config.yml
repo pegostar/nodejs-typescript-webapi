@@ -19,7 +19,7 @@ jobs:
           name: Build
           command: npm -s run build
        - run:
-          name: Build
+          name: Test
           command: npm -s run test
       - save_cache:
           paths:
