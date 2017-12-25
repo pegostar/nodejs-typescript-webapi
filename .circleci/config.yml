@@ -7,21 +7,22 @@ jobs:
     working_directory: ~/nodejs-typescript-webapi
     steps:
       - checkout
+
+      # Download and cache dependencies
       - restore_cache:
           keys:
           - v1-dependencies-{{ checksum "package.json" }}
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
-      - run:
-          name: Install
-          command: npm install
-      - run:
-          name: Build
-          command: npm build
-      - run:
-          name: Test
-          command: npm test
+
+      - run: yarn install
+
+      - run: yarn build
+
       - save_cache:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
+        
+      # run tests!
+      - run: yarn test
